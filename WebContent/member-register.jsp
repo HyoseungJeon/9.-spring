@@ -15,47 +15,47 @@
             <div class="panel panel-bordered">
                 <div class="panel-body">
                     <div class="content">
-                        <form class="form-horizontal">
+                        <form class="form-horizontal" action="${ctx}/member/register" method="post">
                             <div class="form-group">
                                 <label for="inputEmail3" class="col-sm-2 control-label">이메일</label>
                                 <div class="col-sm-5">
-                                    <input type="email" class="form-control" id="inputEmail3" placeholder="이메일">
+                                    <input name="email" type="email" class="form-control" id="inputEmail3" placeholder="이메일">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputEmail3" class="col-sm-2 control-label">이름</label>
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="inputEmail3" placeholder="이름">
+                                    <input name="name" value="test1" type="text" class="form-control" id="inputEmail3" placeholder="이름">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputEmail3" class="col-sm-2 control-label">닉네임</label>
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="inputEmail3" placeholder="닉네임">
+                                    <input name="nickname" value="test1" type="text" class="form-control" id="inputEmail3" placeholder="닉네임">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputPassword3" class="col-sm-2 control-label">비밀번호</label>
                                 <div class="col-sm-5">
-                                    <input type="password" class="form-control" id="inputPassword3" placeholder="비밀번호">
+                                    <input name="password" value="test1" type="password" class="form-control" id="inputPassword3" placeholder="비밀번호">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputPassword3" class="col-sm-2 control-label">비밀번호 확인</label>
                                 <div class="col-sm-5">
-                                    <input type="password" class="form-control" id="inputPassword3" placeholder="비밀번호 확인">
+                                    <input name="password" value="test1" type="password" class="form-control" id="inputPassword3" placeholder="비밀번호 확인">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputEmail3" class="col-sm-2 control-label">휴대번호</label>
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="inputEmail3" placeholder="휴대번호">
+                                    <input name="phoneNumber" value="01000000000" type="text" class="form-control" id="inputEmail3" placeholder="휴대번호">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputEmail3" class="col-sm-2 control-label">생년월일</label>
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="inputEmail3" placeholder="생년월일">
+                                    <input name="birthDay" value="000000" type="text" class="form-control" id="inputEmail3" placeholder="생년월일">
                                 </div>
                             </div>
                             <div class="row">

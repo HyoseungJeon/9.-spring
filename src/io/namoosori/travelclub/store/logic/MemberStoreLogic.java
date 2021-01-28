@@ -5,11 +5,14 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import org.springframework.stereotype.Repository;
+
 import io.namoosori.travelclub.entity.ClubMember;
 import io.namoosori.travelclub.store.MemberStore;
 import io.namoosori.travelclub.store.MemoryMap;
 import io.namoosori.travelclub.util.exception.MemberDuplicationException;
 
+@Repository
 public class MemberStoreLogic implements MemberStore{
 	
 	private Map<String, ClubMember> memberMap;

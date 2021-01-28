@@ -9,6 +9,7 @@ public interface MemberService {
 	String register(ClubMember newMember);
 	ClubMember find(String email);
 	List<ClubMember> findByName(String name);
+	boolean signIn(ClubMember newMember);
 	
 	void modify(ClubMember newMember);
 	void remove(String email);

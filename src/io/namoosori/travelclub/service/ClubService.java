@@ -10,6 +10,7 @@ public interface ClubService {
 	TravelClub find(String name);
 	List<TravelClub> findAll();
 	
+	
 	void modify(TravelClub newClub);
 	void delete(String name);
 	

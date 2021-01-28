@@ -2,17 +2,19 @@ package io.namoosori.travelclub.service.logic;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import io.namoosori.travelclub.entity.TravelClub;
 import io.namoosori.travelclub.service.ClubService;
 import io.namoosori.travelclub.store.ClubStore;
-import io.namoosori.travelclub.store.logic.ClubStoreLogic;
 
+@Service
 public class ClubServiceLogic implements ClubService{
 	
 	private ClubStore clubStore;
 	
-	public ClubServiceLogic() {
-		this.clubStore = new ClubStoreLogic();
+	public ClubServiceLogic(ClubStore clubStore) {
+		this.clubStore = clubStore;
 	}
 	
 	@Override
@@ -49,6 +51,6 @@ public class ClubServiceLogic implements ClubService{
 	@Override
 	public List<TravelClub> findByName(String name) {
 		// TODO Auto-generated method stub
-		return null;
+		return clubStore.retrieveByName(name);
 	}
 }

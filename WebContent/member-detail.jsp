@@ -20,7 +20,7 @@
                                 <label for="inputEmail3" class="col-sm-2 control-label">이메일</label>
                                 <div class="col-sm-5">
                                     <p>
-                                        hello@nextree.io
+                                        ${foundMember.email}
                                     </p>
                                 </div>
                             </div>
@@ -28,7 +28,7 @@
                                 <label for="inputEmail3" class="col-sm-2 control-label">이름</label>
                                 <div class="col-sm-5">
                                     <p>
-                                        홍길동
+                                        ${foundMember.name}
                                     </p>
                                 </div>
                             </div>
@@ -36,7 +36,7 @@
                                 <label for="inputEmail3" class="col-sm-2 control-label">닉네임</label>
                                 <div class="col-sm-5">
                                     <p>
-                                        자바쟁이
+                                        ${foundMember.nickname}
                                     </p>
                                 </div>
                             </div>
@@ -44,7 +44,7 @@
                                 <label for="inputEmail3" class="col-sm-2 control-label">휴대번호</label>
                                 <div class="col-sm-5">
                                     <p>
-                                        010-1234-5678
+                                        ${foundMember.phoneNumber}
                                     </p>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
                                 <label for="inputEmail3" class="col-sm-2 control-label">생년월일</label>
                                 <div class="col-sm-5">
                                     <p>
-                                        92.5.22
+                                        ${foundMember.birthDay}
                                     </p>
                                 </div>
                             </div>

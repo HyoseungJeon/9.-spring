@@ -19,6 +19,7 @@ public class TravelClub {
 	public TravelClub() {
 		//
 		this.members = new ArrayList<ClubMember>();
+		this.foundationTime = System.currentTimeMillis();
 	}
 
 	public TravelClub(String name, String intro) {

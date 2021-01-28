@@ -5,11 +5,14 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import org.springframework.stereotype.Repository;
+
 import io.namoosori.travelclub.entity.TravelClub;
 import io.namoosori.travelclub.store.ClubStore;
 import io.namoosori.travelclub.store.MemoryMap;
 import io.namoosori.travelclub.util.exception.ClubDuplicationException;
 
+@Repository
 public class ClubStoreLogic implements ClubStore{
 	
 	private Map<String, TravelClub> clubMap;
@@ -63,8 +66,8 @@ public class ClubStoreLogic implements ClubStore{
 
 	@Override
 	public List<TravelClub> retrieveByName(String name) {
-		// TODO Auto-generated method stub
-		return null;
+		return clubMap.values().stream().filter(club -> club.getName().toLowerCase().indexOf(name.toLowerCase()) != -1)
+				.collect(Collectors.toList());
 	}
 
 }
